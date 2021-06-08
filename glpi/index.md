@@ -3,8 +3,6 @@ layout: default
 title: GLPI Nightly Builds
 ---
 
-# GLPI nightly builds
-
 Built on 2021-06-08 14:55:19 UTC
 
 ## 9.5-bugfixes
