@@ -3,11 +3,11 @@ layout: default
 title: GLPI Nightly Builds
 ---
 
+<ul><li><a href="..">Home</li></ul>
+
 # GLPI nightly builds
 
 Built on 2021-06-08 14:41:12 UTC
-
-<ul><li><a href="..">Home</li></ul>
 
 ## 9.4-bugfixes
 
