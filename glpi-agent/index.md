@@ -7,14 +7,14 @@ title: GLPI-Agent Nightly Builds
 
 Built on 2021-06-07 16:03:11 UTC
 
-## Windows
+## [#](#windows-1.0-git01fbb4c8) Windows
 
 Arch | Windows installer | Windows portable archive
 ---|:---|:---
 64 bits | [GLPI-Agent-1.0-git01fbb4c8-x64.msi](GLPI-Agent-1.0-git01fbb4c8-x64.msi) | [glpi-agent-1.0-git01fbb4c8-x64.zip](glpi-agent-1.0-git01fbb4c8-x64.zip)
 32 bits | [GLPI-Agent-1.0-git01fbb4c8-x86.msi](GLPI-Agent-1.0-git01fbb4c8-x86.msi) | [glpi-agent-1.0-git01fbb4c8-x86.zip](glpi-agent-1.0-git01fbb4c8-x86.zip)
 
-## MacOSX
+## [#](#macosx-1.0-git01fbb4c8) MacOSX
 
 ### MacOSX - Intel
 
@@ -30,7 +30,7 @@ Arch | Package
 arm64 | PKG: [GLPI-Agent-1.0-git01fbb4c8_arm64.pkg](GLPI-Agent-1.0-git01fbb4c8_arm64.pkg)
 arm64 | DMG: [GLPI-Agent-1.0-git01fbb4c8_arm64.dmg](GLPI-Agent-1.0-git01fbb4c8_arm64.dmg)
 
-## Linux
+## [#](#linux-1.0-git01fbb4c8) Linux
 
 ### Linux installer
 
@@ -81,14 +81,14 @@ Cron | [glpi-agent-cron-1.0-git01fbb4c8.noarch.rpm](glpi-agent-cron-1.0-git01fbb
 
 Built on 2021-06-07 10:14:49 UTC
 
-## Windows
+## [#](#windows-1.0-git994a347a) Windows
 
 Arch | Windows installer | Windows portable archive
 ---|:---|:---
 64 bits | [GLPI-Agent-1.0-git994a347a-x64.msi](GLPI-Agent-1.0-git994a347a-x64.msi) | [glpi-agent-1.0-git994a347a-x64.zip](glpi-agent-1.0-git994a347a-x64.zip)
 32 bits | [GLPI-Agent-1.0-git994a347a-x86.msi](GLPI-Agent-1.0-git994a347a-x86.msi) | [glpi-agent-1.0-git994a347a-x86.zip](glpi-agent-1.0-git994a347a-x86.zip)
 
-## MacOSX
+## [#](#macosx-1.0-git994a347a) MacOSX
 
 ### MacOSX - Intel
 
@@ -104,7 +104,7 @@ Arch | Package
 arm64 | PKG: [GLPI-Agent-1.0-git994a347a_arm64.pkg](GLPI-Agent-1.0-git994a347a_arm64.pkg)
 arm64 | DMG: [GLPI-Agent-1.0-git994a347a_arm64.dmg](GLPI-Agent-1.0-git994a347a_arm64.dmg)
 
-## Linux
+## [#](#linux-1.0-git994a347a_arm64) Linux
 
 ### Linux installer
 
