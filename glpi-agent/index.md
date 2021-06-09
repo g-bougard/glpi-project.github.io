@@ -7,14 +7,14 @@ title: GLPI-Agent Nightly Builds
 
 Built on 2021-06-07 16:03:11 UTC
 
-## Windows <a href="#windows-1.0-git01fbb4c8" id="windows-1.0-git01fbb4c8">#</a>
+## Windows {#windows-1.0-git01fbb4c8} <a href="#windows-1.0-git01fbb4c8">&#x1F517;</a>
 
 Arch | Windows installer | Windows portable archive
 ---|:---|:---
 64 bits | [GLPI-Agent-1.0-git01fbb4c8-x64.msi](GLPI-Agent-1.0-git01fbb4c8-x64.msi) | [glpi-agent-1.0-git01fbb4c8-x64.zip](glpi-agent-1.0-git01fbb4c8-x64.zip)
 32 bits | [GLPI-Agent-1.0-git01fbb4c8-x86.msi](GLPI-Agent-1.0-git01fbb4c8-x86.msi) | [glpi-agent-1.0-git01fbb4c8-x86.zip](glpi-agent-1.0-git01fbb4c8-x86.zip)
 
-## MacOSX <a href="#macosx-1.0-git01fbb4c8" id="macosx-1.0-git01fbb4c8">#</a>
+## MacOSX {#macosx-1.0-git01fbb4c8} <a href="#macosx-1.0-git01fbb4c8">&#x1F517;</a>
 
 ### MacOSX - Intel
 
@@ -30,7 +30,7 @@ Arch | Package
 arm64 | PKG: [GLPI-Agent-1.0-git01fbb4c8_arm64.pkg](GLPI-Agent-1.0-git01fbb4c8_arm64.pkg)
 arm64 | DMG: [GLPI-Agent-1.0-git01fbb4c8_arm64.dmg](GLPI-Agent-1.0-git01fbb4c8_arm64.dmg)
 
-## Linux <a href="#linux-1.0-git01fbb4c8" id="linux-1.0-git01fbb4c8">#</a>
+## Linux {#linux-1.0-git01fbb4c8} <a href="#linux-1.0-git01fbb4c8">&#x1F517;</a>
 
 ### Linux installer
 
@@ -81,14 +81,14 @@ Cron | [glpi-agent-cron-1.0-git01fbb4c8.noarch.rpm](glpi-agent-cron-1.0-git01fbb
 
 Built on 2021-06-07 10:14:49 UTC
 
-## Windows {#windows-1.0-git994a347a}
+## Windows {#windows-1.0-git994a347a} <a href="#windows-1.0-git994a347a">&#x1F517;</a>
 
 Arch | Windows installer | Windows portable archive
 ---|:---|:---
 64 bits | [GLPI-Agent-1.0-git994a347a-x64.msi](GLPI-Agent-1.0-git994a347a-x64.msi) | [glpi-agent-1.0-git994a347a-x64.zip](glpi-agent-1.0-git994a347a-x64.zip)
 32 bits | [GLPI-Agent-1.0-git994a347a-x86.msi](GLPI-Agent-1.0-git994a347a-x86.msi) | [glpi-agent-1.0-git994a347a-x86.zip](glpi-agent-1.0-git994a347a-x86.zip)
 
-## MacOSX {#macosx-1.0-git994a347a}
+## MacOSX {#macosx-1.0-git994a347a} <a href="#macosx-1.0-git994a347a">&#x1F517;</a>
 
 ### MacOSX - Intel
 
@@ -104,7 +104,7 @@ Arch | Package
 arm64 | PKG: [GLPI-Agent-1.0-git994a347a_arm64.pkg](GLPI-Agent-1.0-git994a347a_arm64.pkg)
 arm64 | DMG: [GLPI-Agent-1.0-git994a347a_arm64.dmg](GLPI-Agent-1.0-git994a347a_arm64.dmg)
 
-## Linux {#linux-1.0-git994a347a_arm64}
+## Linux {#linux-1.0-git994a347a} <a href="#linux-1.0-git994a347a">&#x1F517;</a>
 
 ### Linux installer
 
@@ -155,14 +155,14 @@ Cron | [glpi-agent-cron-1.0-git994a347a.noarch.rpm](glpi-agent-cron-1.0-git994a3
 
 Built on 2021-06-07 10:14:39 UTC
 
-## Windows
+## Windows {#windows-1.0-gitd60e2283} <a href="#windows-1.0-gitd60e2283">&#x1F517;</a>
 
 Arch | Windows installer | Windows portable archive
 ---|:---|:---
 64 bits | [GLPI-Agent-1.0-gitd60e2283-x64.msi](GLPI-Agent-1.0-gitd60e2283-x64.msi) | [glpi-agent-1.0-gitd60e2283-x64.zip](glpi-agent-1.0-gitd60e2283-x64.zip)
 32 bits | [GLPI-Agent-1.0-gitd60e2283-x86.msi](GLPI-Agent-1.0-gitd60e2283-x86.msi) | [glpi-agent-1.0-gitd60e2283-x86.zip](glpi-agent-1.0-gitd60e2283-x86.zip)
 
-## MacOSX
+## MacOSX {#macosx-1.0-gitd60e2283} <a href="#macosx-1.0-gitd60e2283">&#x1F517;</a>
 
 ### MacOSX - Intel
 
@@ -178,7 +178,7 @@ Arch | Package
 arm64 | PKG: [GLPI-Agent-1.0-gitd60e2283_arm64.pkg](GLPI-Agent-1.0-gitd60e2283_arm64.pkg)
 arm64 | DMG: [GLPI-Agent-1.0-gitd60e2283_arm64.dmg](GLPI-Agent-1.0-gitd60e2283_arm64.dmg)
 
-## Linux
+## Linux {#linux-1.0-gitd60e2283} <a href="#linux-1.0-gitd60e2283">&#x1F517;</a>
 
 ### Linux installer
 
