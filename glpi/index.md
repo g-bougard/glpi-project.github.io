@@ -15,4 +15,4 @@ Date|Archive|Size
 ---|---|---
 2021-06-16 00:14:45 UTC|[master.2c4f092.tar.gz](master.2c4f092.tar.gz)|50952515
 
-Generated on 2021-06-17 08:36:03 UTC
+<font size="1">Generated on 2021-06-17 08:36:03 UTC</font>
