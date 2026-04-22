@@ -44,6 +44,10 @@ jobs:
           done
           # Cleanup README.md
           sudo rm -f ./_site/README.md
+          # Check
+          ls -l ./_site/glpi-releases
+          git config get --show-names core.symlinks
+          git config set core.symlinks true
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
