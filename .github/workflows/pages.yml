@@ -53,10 +53,26 @@ jobs:
           # Check
           ls -l ./_site/glpi-releases
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: ./_site
+      - name: Archive artifact
+        shell: sh
+        run: |
+          echo ::group::Archive artifact
+          tar \
+            --directory "./_site" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
+          echo ::endgroup::
+
+    - name: Upload artifact
+      id: upload-artifact
+      uses: actions/upload-artifact@v7
+      with:
+        name: 'github-pages'
+        path: ${{ runner.temp }}/artifact.tar
+        retention-days: 1
+        if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
