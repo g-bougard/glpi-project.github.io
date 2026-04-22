@@ -65,14 +65,14 @@ jobs:
             .
           echo ::endgroup::
 
-    - name: Upload artifact
-      id: upload-artifact
-      uses: actions/upload-artifact@v7
-      with:
-        name: 'github-pages'
-        path: ${{ runner.temp }}/artifact.tar
-        retention-days: 1
-        if-no-files-found: error
+      - name: Upload artifact
+        id: upload-artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: 'github-pages'
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
