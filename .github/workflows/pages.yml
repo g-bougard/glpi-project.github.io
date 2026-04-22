@@ -1,0 +1,70 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      # Workaround (2026-04-22): the /glpi/ path is permanently blocked at GitHub Pages'
+      # origin level, likely because unzipped GLPI PHP source files were accidentally
+      # pushed to that directory, causing GitHub to flag it. Disabling/re-enabling Pages
+      # and switching deployment methods had no effect. The sed rewrites the absolute
+      # hrefs that jekyll-relative-links generates before the directory is renamed.
+      # To revert: remove this step and restore links in index.md and _layouts/default.html.
+      - name: Rename glpi to glpi-releases
+        run: |
+          sudo sed -i 's|href="(.*)?/glpi/|href="|g' ./_site/glpi/index.html
+          sudo mv ./_site/glpi ./_site/glpi-releases
+          for base in dev 10.0 11.0
+          do
+            sudo rm -f ./_site/glpi-releases/$base.tar.gz
+            read file x <<< $( echo ./_site/glpi-releases/$base-???????.tar.gz )
+            [ -e "$file" ] || continue
+            sudo ln -sf ${file##*/} ./_site/glpi-releases/$base.tar.gz
+          done
+          # Cleanup README.md
+          sudo rm -f ./_site/README.md
+          # Check
+          ls -l ./_site/glpi-releases
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./_site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
