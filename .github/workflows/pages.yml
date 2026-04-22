@@ -33,15 +33,17 @@ jobs:
       # To revert: remove this step and restore links in index.md and _layouts/default.html.
       - name: Rename glpi to glpi-releases
         run: |
-          sudo sed -i 's|href="/glpi/|href="/glpi-releases/|g' ./_site/glpi/index.html
+          sudo sed -i 's|href="(.*)?/glpi/|href="|g' ./_site/glpi/index.html
           sudo mv ./_site/glpi ./_site/glpi-releases
           for base in dev 10.0 11.0
           do
-            sudo rm -f _site/glpi-releases/$base.tar.gz
-            read file <<< _site/glpi-releases/$base-???????.tar.gz
+            sudo rm -f ./_site/glpi-releases/$base.tar.gz
+            read file x <<< $( echo ./_site/glpi-releases/$base-???????.tar.gz )
             [ -e "$file" ] || continue
-            sudo ln -sf ${file##*/} _site/glpi-releases/$base.tar.gz
+            sudo ln -sf ${file##*/} ./_site/glpi-releases/$base.tar.gz
           done
+          # Cleanup README.md
+          sudo rm -f ./_site/README.md
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
